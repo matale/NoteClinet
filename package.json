@@ -1,5 +1,4 @@
 {
-  
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -24,8 +23,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "build": "npm install && react-scripts build ",
-    "start": "node server.js",
+    "start": "react-scripts start",
+    "build": "CI=react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
