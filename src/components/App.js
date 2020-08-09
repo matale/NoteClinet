@@ -2,7 +2,7 @@ import React from 'react';
 import Register from './Register';
 import ForGotPassword from './ForGotPassword';
 import Login from './Login';
-import DashBoard from './DashBoard';
+import Dashboard from './Dashboard';
 import { Route, Switch, Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
@@ -17,8 +17,8 @@ export default function App() {
           <Route path='/Login' exact component={Login}></Route>
           <Route path='/Register' exact component={Register}></Route>
           <Route path='/ForGotPassword' exact component={ForGotPassword}></Route>
-          <Route path='/Dashboard' exact component={DashBoard}></Route>
-          <Route component={DashBoard} />
+          <Route path='/Dashboard' exact component={Dashboard}></Route>
+          <Route component={Dashboard} />
         </Switch>
       </Router>
     </div>

@@ -16,7 +16,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 import { Route, Switch, Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import MyAccount from '../components/MyAccount';
+import MyAccount from './MyAccount';
 import Notes from './Notes';
 import NavLink from './NavLink';
 import Archieve from './Archieve';
