@@ -1,4 +1,3 @@
-import { PromiseProvider } from "mongoose";
 
 export default {
     

@@ -14,7 +14,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import ForGotPassword from './ForGotPassword';
 import AuthService from '../services/AuthService';
-import { PromiseProvider } from 'mongoose';
 
 const Login = props=>{
  const [user,setUser] = useState({username: " ", password : " "});
