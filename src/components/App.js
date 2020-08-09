@@ -18,7 +18,7 @@ export default function App() {
           <Route path='/Register' exact component={Register}></Route>
           <Route path='/ForGotPassword' exact component={ForGotPassword}></Route>
           <Route path='/Dashboard' exact component={Dashboard}></Route>
-          <Route component={Dashbard} />
+          <Route component={Dashboard} />
         </Switch>
       </Router>
     </div>
