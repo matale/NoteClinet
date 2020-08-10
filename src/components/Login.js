@@ -1,4 +1,4 @@
-import React,{useState, useContext , useForceUpdate } from 'react';
+import React,{useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -31,17 +31,14 @@ const onSubmit = e =>{
         console.log(data);
         const { isAuthenticated,user,message } = data;
         if(isAuthenticated){
-              //console.log("from login2.js" + data.user.username)
             setUser(data.user);
             setIsAuthenticated(isAuthenticated);
             localStorage.setItem('Authorization', data.token);
             props.history.push('/Dashboard',[{user}]);
-           //authContext.setIsAuthenticated();
            window.location.reload(false);
         }
         else{
             alert("Invalid!");
-            //setMessage(message);
         }
     });
 }

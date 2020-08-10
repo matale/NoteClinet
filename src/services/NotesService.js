@@ -1,7 +1,7 @@
 
 export default {
     
-    getNotes : ()=>{
+    getNotes : () => {
         return fetch('https://notea.herokuapp.com/user/notes',{
             headers:{
                 'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export default {
                         
                 });
     },
-    getArchieveNotes : ()=>{
+    getArchieveNotes : () => {
         return fetch('https://notea.herokuapp.com/user/notes/archieve',{
             headers:{
                 'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export default {
                         
                 });
     },
-    getTrashNotes : ()=>{
+    getTrashNotes : () => {
         return fetch('https://notea.herokuapp.com/user/notes/trash',{
             headers:{
                 'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export default {
                         
                 });
     },
-    postNote : note=>{
+    postNote : note => {
         return fetch('https://notea.herokuapp.com/user/note',{
             method : "post",
             body : JSON.stringify(note),
@@ -73,7 +73,7 @@ export default {
         });
     },
 
-    deleteNote : note=>{
+    deleteNote : note => {
         return fetch('https://notea.herokuapp.com/user/note/delete',{
             method : "delete",
             body : JSON.stringify(note),
@@ -91,8 +91,8 @@ export default {
         });
     },
 
-    updateNotes : note=>{
-        return fetch('https://notea.herokuapp.com/user/note/update',{
+    updateNotes : note => {
+        return fetch('https://notea.herokuapp.com/user/note/update', {
             method : "PUT",
             body : JSON.stringify(note),
             headers:{
@@ -112,7 +112,7 @@ export default {
                 });
     },
 
-    updateArchieveNotes : note=>{
+    updateArchieveNotes : note => {
         return fetch('https://notea.herokuapp.com/user/note/archieve',{
             method : "PUT",
             body : JSON.stringify(note),
@@ -133,7 +133,7 @@ export default {
                 });
     },
 
-    updateTrashNotes : note=>{
+    updateTrashNotes : note => {
         return fetch('https://notea.herokuapp.com/user/note/trash',{
             method : "PUT",
             body : JSON.stringify(note),

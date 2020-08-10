@@ -28,7 +28,7 @@ export default {
         }).then(res => res.json())
             .then(data => data);
     },
-    updateUser : user=>{
+    updateUser : user => {
         return fetch('https://notea.herokuapp.com/user/update',{
             method : "PUT",
             body : JSON.stringify(user),
@@ -38,7 +38,7 @@ export default {
                 "Authorization": localStorage.getItem('Authorization')
             }
            
-        }) .then(response=>{
+        }) .then(response => {
                     if(response.status !== 401){
                         return response.json().then(data => data);
                     }
